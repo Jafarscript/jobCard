@@ -1,0 +1,148 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f2f2fb;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.title {
+  color: #2e3554;
+  font-weight: 500;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-between;
+}
+
+.job {
+  background: #ffffff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10%;
+  width: 150px;
+}
+
+.job h4 {
+  margin: 0;
+  color: #2e3554;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.job h4 i {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 20%;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #2E3554;
+}
+
+.btn {
+  width: 100%;
+  padding: 5px;
+}
+
+#code {
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(220, 175, 193, 1) 100%
+  );
+}
+
+#design {
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+#people {
+  background: linear-gradient(
+    140deg,
+    #aeedee 0%,
+    rgba(175, 220, 220, 1) 100%
+  );
+}
+
+#sale {
+  background: rgb(161, 164, 180);
+  background: linear-gradient(
+    153deg,
+    rgba(161, 164, 180, 1) 10%,
+    rgba(220, 175, 193, 1) 100%
+  );
+}
+
+#operator{
+    background: linear-gradient(52deg, rgba(174,237,238,1) 0%, rgba(220,175,193,1) 100%);
+}
+
+#univer{
+    background: rgb(174,237,238);
+    background: linear-gradient(324deg, rgba(174,237,238,0.9220063025210083) 0%, rgba(220,175,193,1) 100%);
+}
+
+.btn{
+    border: 1px solid #A1A4B4;
+    border-radius: 3px;
+    background: transparent;
+    color: #2E3554;
+    padding: 8px;
+}
+.btn:hover{
+    background: #2E3554;
+    color: #ffffff;
+}
+
+.foot{
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    color: #2e3554;
+    text-align: center;
+    width: 600px;
+}
+
+@media (max-width: 1024px){
+.foot{
+    width: 200px;
+}
+.card{
+    grid-template-columns: 1fr;
+}
+.title{
+    margin-bottom: 20px;
+}
+.job{
+    width: 150px;
+}
+main{
+    padding: 20px 0;
+}
+}
